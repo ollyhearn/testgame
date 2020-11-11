@@ -14,7 +14,7 @@ int main(){
 	init_pair(1, COLOR_BLACK, COLOR_WHITE);
 	init_pair(2, COLOR_YELLOW, COLOR_BLUE);
 	init_pair(3, COLOR_GREEN, COLOR_MAGENTA);
-//	while(h==h){
+	while(1){
 		while(temp<4){
 			move(0,0);
 			attron(COLOR_PAIR((int)temp));
@@ -23,7 +23,7 @@ int main(){
 			temp++;
 		}
 		temp=1;
-//	}
+	}
 	getch();
 	endwin();
 	return 0;
